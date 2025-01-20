@@ -131,7 +131,7 @@ body {
 
 .container2 .left img {
     width: 35vw;
-        border-radius: 4ch;
+    border-radius: 4ch;
 
 }
 
@@ -144,6 +144,8 @@ body {
 }
 
 .container2 .right .topbt {
+    display: flex;
+    /* align-self: flex-end; */
     background-color: transparent;
     border: 1px solid white;
     border-radius: 1ch;
@@ -174,6 +176,7 @@ body {
     color: white;
     background-color: rgb(17, 17, 17);
     align-items: center;
+    /* margin: auto; */
     gap: 2ch;
     width: auto;
 }
@@ -637,7 +640,7 @@ footer {
 
 @media (max-width:500px) {
 
-    body *:not(.container2, .container4,  .container9) {
+    body *:not( .container4,  .container9) {
         padding-left: 2%;
         padding-right: 2%;
     }
@@ -711,15 +714,25 @@ footer {
     /* Container2 */
     .container2 {
         flex-direction: column-reverse;
-        padding: 15% 4% 10%;
+        padding: 15% 4% 10% 4%;
         gap: 0;
+        /* padding: 0; */
+        width: 92%;
+        margin: auto;
     }
 
-    .container2 .left,
-    .container2 .right {
+    .container2 .left{
+        /* all: unset; */
         width: 100%;
-        align-items: flex-start;
-        justify-content: flex-start;
+        /* margin: auto; */
+        /* align-items: flex-start; */
+        /* justify-content: flex-start; */
+    }
+    .container2 .right {
+        /* padding: 10px; */
+        /* margin: 0 auto; */
+        width: 92%;
+        /* max-width: 100%; */
     }
 
     .container2 .left img {
@@ -729,6 +742,7 @@ footer {
 
     .container2 .right .topbt {
         width: 30%;
+        /* margin: 0; */
         line-height: normal;
         height: 1.2rem;
         border-radius: 0.4rem;
@@ -740,16 +754,18 @@ footer {
 
     .container2 .right .p1 {
         font-size: 1.6rem;
+        padding: 0;
     }
 
     .container2 .right .p2 {
         font-size: 0.8rem;
         margin-bottom: 0;
+        padding: 0;
     }
 
     .container2 .right .bmbt {
-        width: 92%;
-        gap: 10%;
+        width: 100%;
+        gap: 6%;
         margin-top: 1rem;
     }
 
