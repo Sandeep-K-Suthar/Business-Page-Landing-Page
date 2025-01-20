@@ -640,7 +640,7 @@ footer {
 
 @media (max-width:500px) {
 
-    body *:not( .container4,  .container9) {
+    body *:not( .container2, .container4,  .container9) {
         padding-left: 2%;
         padding-right: 2%;
     }
@@ -718,7 +718,7 @@ footer {
         gap: 0;
         /* padding: 0; */
         width: 92%;
-        margin: auto;
+        margin: 0;
     }
 
     .container2 .left{
